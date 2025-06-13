@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Zag;
+    src: url(fonts/Algerian.ttf);
+}
+
+@font-face {
+    font-family: text;
+    src: url(fonts/baskervilleoldface.ttf);
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: 'text';
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headfooter: #1C120E;
+    --zag: #ECDADA;
+    --bg: #5A1903;
+    --card: #330A05;
+}
+
+/*шапка*/
+header {
+    font-family: 'text';
+    margin-bottom: 3%;
+    background-color: var(--headfooter);
+    margin: 0;
+}
+
+header {
+    font-family: 'text';
+    background-color: var(--headfooter);
+}
+
+.logo {
+    width: 20vh;
+    margin-left: 3%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    margin-right: 10%;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    gap: 10%;
+}
+
+.list a {
+    text-decoration: none;
+    color: var(--zag);
+    white-space: nowrap;
+    font-size: 5vh;
+}
+/*тело*/
+.banner{
+    background: url(images/fon.jpg);
+    height: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3%;
+}
+h1{
+    color: var(--zag);
+    font-family: Zag;
+    text-align: center;
+    font-size: 10vw;
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+h2{
+    color: var(--zag);
+    font-family: Zag;
+    text-align: left;
+    font-size: 7vw; 
+    margin-left: 5%;
+}
+.head-info{
+    color: var(--zag);
+    font-family: Zag;
+    text-align: center;
+    font-size: 2vw;
+    position: absolute; 
+    top: 65%;
+    left: 52%; 
+    transform: translate(-60%, -60%); 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.au{
+    display: grid;
+    max-width: auto; /* Можно регулировать по необходимости */
+    width: 100%;
+    border: 1vh solid #5A1903; /* Цвет рамки */
+    border-radius: 2vw; /* Закругление углов */
+    overflow: hidden;
+    background: var(--card);
+    grid-template-columns: 50% 50%;
+    padding: 2%;
+}
+
+.image-card{
+    border: #ECDADA;
+    border-radius: 20vw;
+}
+.picture{
+    width: 40vw;
+    height: 40vw;
+    padding: 2vw;
+    margin-left: 5%;
+}
+
+h3{
+    font-family: text;
+    color: var(--zag);
+    font-size: 4vw;
+    text-align: center;
+}
+h4{
+    font-family: text;
+    color: var(--zag);
+    font-size: 3.5vw;
+}
+
+.plot{
+    display: flex;
+    max-width: auto; /* Можно регулировать по необходимости */
+    width:98%;
+    border: 1vh solid #5A1903; /* Цвет рамки */
+    border-radius: 2vw; /* Закругление углов */
+    overflow: hidden;
+    background: var(--card);
+    padding: 2%;
+    margin-left: 1%;
+}
+
+/*подвал*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--headfooter);
+    padding: 15px 3%;
+}
+
+.footer-container a {
+    font-family: text;
+    color: var(--zag);
+    font-size: 8vh;
+}
+
+.images-f {
+    display: flex;
+    gap: 15%;
+}
+
+.ds {
+    width: 20vh;
+}
+
+.tg {
+    height: 20vh;
+}
